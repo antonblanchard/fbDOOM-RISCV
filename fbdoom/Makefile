@@ -27,7 +27,7 @@ OBJS_AUTOVEC+=$(OBJDIR_VEC)/i_video_fbdev.o
 OBJS_AUTOVEC+=$(OBJDIR_VEC)/i_input_linux.o
 
 CC=$(CROSS_COMPILE)gcc  # gcc or g++
-CFLAGS+=-ggdb3 -O3 -g -mcpu=tt-ascalon-d8 -std=c11 -D_GNU_SOURCE
+CFLAGS+=-ggdb3 -O3 -g -march=rv64gcv -std=c11 -D_GNU_SOURCE
 LDFLAGS+=-Wl,--gc-sections
 CFLAGS+=-ggdb3 -Wall -DNORMALUNIX -DLINUX -DSNDSERV # -DUSEASM
 LIBS+=-lm -lc -static
