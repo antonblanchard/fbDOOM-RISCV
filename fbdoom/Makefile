@@ -18,10 +18,10 @@ endif
 #CFLAGS+=-Wunused-const-variable=0 
 #CFLAGS+=-fsanitize=address
 OBJS+=$(OBJDIR)/i_video_fbdev.o
-OBJS+=$(OBJDIR)/i_input_tty.o
+OBJS+=$(OBJDIR)/i_input_linux.o
 
 OBJS_VEC+=$(OBJDIR_VEC)/i_video_fbdev.o
-OBJS_VEC+=$(OBJDIR_VEC)/i_input_tty.o
+OBJS_VEC+=$(OBJDIR_VEC)/i_input_linux.o
 
 CC=$(CROSS_COMPILE)gcc  # gcc or g++
 CFLAGS+=-ggdb3 -O3 -g -mcpu=tt-ascalon-d8 -std=c11 -D_XOPEN_SOURCE=500
