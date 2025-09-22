@@ -149,7 +149,7 @@ static unsigned char TranslateKey(unsigned char key)
         case KEY_TAB: return DOOM_KEY_TAB;
         case KEY_ENTER: return DOOM_KEY_ENTER;
         case KEY_ESC: return DOOM_KEY_ESCAPE;
-        case KEY_SPACE: return ' ';
+        case KEY_SPACE: return DOOM_KEY_USE;
         case KEY_APOSTROPHE: return '\'';
         case KEY_COMMA: return ',';
         case KEY_MINUS: return DOOM_KEY_MINUS;
