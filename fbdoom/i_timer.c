@@ -31,7 +31,7 @@
 static uint32_t basetime = 0;
 
 // Adjust for simulator
-#define SCALING_FACTOR 227
+#define SCALING_FACTOR 210
 
 int I_GetTicks(void)
 {
