@@ -58,7 +58,7 @@ static sound_module_t *sound_module;
 static music_module_t *music_module;
 
 int snd_musicdevice = SNDDEVICE_SB;
-int snd_sfxdevice = SNDDEVICE_UART;
+int snd_sfxdevice = SNDDEVICE_SB;
 
 // Sound modules
 
@@ -67,7 +67,6 @@ extern sound_module_t sound_sdl_module;
 extern sound_module_t sound_pcsound_module;
 extern music_module_t music_sdl_module;
 extern music_module_t music_opl_module;
-extern sound_module_t sound_uart_module;
 
 // For OPL module:
 
@@ -93,11 +92,8 @@ static int snd_mport = 0;
 static sound_module_t *sound_modules[] = 
 {
 #ifdef FEATURE_SOUND
-#if 0
     &sound_sdl_module,
     &sound_pcsound_module,
-#endif
-    &sound_uart_module,
 #endif
     NULL,
 };
@@ -107,10 +103,8 @@ static sound_module_t *sound_modules[] =
 static music_module_t *music_modules[] =
 {
 #ifdef FEATURE_SOUND
-#if 0
     &music_sdl_module,
     &music_opl_module,
-#endif
 #endif
     NULL,
 };

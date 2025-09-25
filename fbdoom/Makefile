@@ -19,15 +19,12 @@ endif
 #CFLAGS+=-fsanitize=address
 OBJS+=$(OBJDIR)/i_video_fbdev.o
 OBJS+=$(OBJDIR)/i_input_linux.o
-OBJS+=$(OBJDIR)/i_uartsound.o
 
 OBJS_VEC+=$(OBJDIR_VEC)/i_video_fbdev.o
 OBJS_VEC+=$(OBJDIR_VEC)/i_input_linux.o
-OBJS_VEC+=$(OBJDIR_VEC)/i_uartsound.o
 
 OBJS_AUTOVEC+=$(OBJDIR_VEC)/i_video_fbdev.o
 OBJS_AUTOVEC+=$(OBJDIR_VEC)/i_input_linux.o
-OBJS_AUTOVEC+=$(OBJDIR_VEC)/i_uartsound.o
 
 CC=$(CROSS_COMPILE)gcc  # gcc or g++
 CFLAGS+=-ggdb3 -O3 -g -mcpu=tt-ascalon-d8 -std=c11 -D_GNU_SOURCE
