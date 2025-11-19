@@ -124,7 +124,7 @@ static const char at_to_doom[] =
     /* 0x41 */ DOOM_KEY_F7,
     /* 0x42 */ DOOM_KEY_F8,
     /* 0x43 */ DOOM_KEY_F9,
-    /* 0x44 */ DOOM_DOOM_KEY_F10,
+    /* 0x44 */ DOOM_KEY_F10,
     /* 0x45 */ DOOM_KEY_NUMLOCK,
     /* 0x46 */ 0x0,
     /* 0x47 */ 0x0, /* 47 (Keypad-7/Home) */
